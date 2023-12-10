@@ -1,0 +1,35 @@
+.searchInput {
+  border: 0;
+}
+.searchInput:focus {
+  outline: none;
+}
+
+.label {
+  width: 147px;
+  flex-shrink: 0;
+  color: var(--neutral-04, #3c3c3c);
+  font-family: Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.inputField {
+  color: #3c3c3c;
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  display: flex;
+  width: 315px;
+  padding: 9px 12px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 2px;
+  border: 1px solid var(--neutral-02, #d0d0d0);
+  background: var(--neutral-01, #fff);
+}

@@ -1,0 +1,145 @@
+:root {
+  --darkblue01: #cfd4ed;
+  --darkblue02: #aeb7e1;
+  --darkblue03: #5e70c4;
+  --darkblue04: #0d28a6;
+  --darkblue05: #091b6f;
+  --limegreen01: #def1df;
+  --limegreen02: #c9e7ca;
+  --limegreen03: #92d094;
+  --limegreen04: #5cb85f;
+  --limegreen05: #3d7b3f;
+  --neutral01: #ffffff;
+  --neutral02: #d0d0d0;
+  --neutral03: #8a8a8a;
+  --neutral04: #3c3c3c;
+  --neutral05: #151515;
+  --alert-danger: #fa2c5a;
+  --alert-warning: #f9cc00;
+  --alert-succes: #73ca5c;
+  --fwlight: 300;
+  --fwreguler: 400;
+  --fwbold: 700;
+}
+
+body {
+  font-family: Helvetica, sans-serif !important;
+  margin: 0;
+}
+.max-width {
+  max-width: 1440px;
+}
+.main-bg {
+  background-color: #f1f3ff;
+}
+.mb-100 {
+  margin-bottom: 100px;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+.ml-100 {
+  margin-left: 100px;
+}
+.mt-64 {
+  margin-top: 64px;
+}
+.mb-64 {
+  margin-bottom: 64px;
+}
+.mb-37 {
+  margin-bottom: 37px;
+}
+.pt-37 {
+  padding-top: 37px;
+}
+.pbt-69 {
+  padding: 69px 0;
+}
+.padding-5 {
+  padding: 6px !important;
+}
+/* font style */
+.big-header {
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: var(--fwbold);
+}
+.body-light {
+  font-size: 14px;
+  font-weight: var(--fwlight) !important;
+  line-height: 20px;
+}
+.body-regular {
+  font-size: 14px !important;
+  font-weight: var(--fwreguler) !important;
+  line-height: 20px;
+  color: black;
+}
+.body-bold {
+  font-size: 14px;
+  font-weight: var(--fwbold);
+  line-height: 20px;
+  color: black;
+}
+.heading-bold {
+  font-size: 24px;
+  font-weight: var(--fwbold);
+  line-height: 36px;
+  color: black;
+}
+.title-bold {
+  font-size: 16px;
+  font-weight: var(--fwbold);
+  line-height: 24px;
+  color: black;
+}
+
+/* TESTIMONIAL */
+.testi-card {
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #f1f3ff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+#testi-button button {
+  border: unset;
+  padding: 0 12px;
+  background-color: unset;
+}
+#testi-button button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+#testi-button button:active {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.buttonStyle {
+  color: var(--neutral-10, #fff);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  display: inline-flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  background-color: var(--limegreen04);
+  border: 0;
+  max-height: 36px;
+}
+
+.buttonStyle:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.buttonStyle:active {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.modal-content {
+  max-width: 397px;
+}

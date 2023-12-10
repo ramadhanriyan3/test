@@ -1,0 +1,11 @@
+.whyCard {
+  width: 270px !important;
+  height: auto;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--neutral02);
+}

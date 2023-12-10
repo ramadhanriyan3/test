@@ -1,0 +1,83 @@
+.filterForm {
+  position: relative;
+  bottom: 50px;
+  max-width: 1047px;
+  border-radius: 8px;
+  background: var(--neutral-01, #fff);
+  /* Shadow/High */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+.inputTitle {
+  width: 211px;
+}
+.inputTitle p {
+  color: var(--neutral-04, #3c3c3c);
+  /* Text S/Light */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px; /* 150% */
+}
+.inputBox {
+  width: 100%;
+  display: flex;
+  padding: 9px 12px;
+  align-items: center;
+  align-self: stretch;
+  justify-content: space-between;
+  border-radius: 2px;
+  border: 1px solid var(--neutral-02, #d0d0d0);
+  background: var(--neutral-01, #fff);
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.inputContent {
+  margin: 0;
+  color: var(--neutral-03, #8a8a8a) !important;
+  /* Body/12/Light */
+  font-family: Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  float: inline-end;
+}
+
+.optionList {
+  margin-top: 8px;
+  padding: 8px;
+  position: absolute;
+  width: 211px;
+  border-radius: 2px;
+  border: 1px solid var(--neutral-02, #d0d0d0);
+  background: var(--neutral-01, #fff);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.option {
+  list-style: none;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.option p {
+  margin: 0;
+  padding: 11px 9px 11px 9px;
+}
+.option:hover {
+  background-color: var(--limegreen02); /* #c9e7ca */
+  color: var(--limegreen04); /* #5cb85f */
+}
+
+.passenger {
+  border: 0 !important;
+  color: var(--neutral-04, #3c3c3c);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+}
+.passenger:focus {
+  outline: none;
+}
