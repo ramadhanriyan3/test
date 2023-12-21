@@ -44,12 +44,11 @@ function CmsCard({
 }: CmsCardProps) {
   const [modalShow, setModalShow] = useState(false);
   const router = useRouter();
-  const [paramsId, setParamsId] = useState("1");
-  const handlerEdit = (e: any) => {
-    router.push("/dashboard/create");
-  };
   return (
-    <div className="card d-flex justify-content-center column-gap-3 p-4">
+    <div
+      data-testid="cmsCard"
+      className="card d-flex justify-content-center column-gap-3 p-4"
+    >
       <Image
         src={`/${imagePath.split("/").pop()}`}
         className={cx(cardsImage, "mx-auto")}
@@ -60,7 +59,7 @@ function CmsCard({
         <p className={cx(priceStyle, "price m-0 pb-1")}>Rp. {price}/day</p>
         <p className="body-light m-0 pb-3">
           Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          bulk of the cards content.
         </p>
         <div className="d-flex mb-3">
           <Image src="/fi_passenger.svg" alt="" />

@@ -14,7 +14,7 @@ interface CardCarProps {
 
 function CarsWrapper({ filteredData }: CardCarProps) {
   return (
-    <Container className="mx-auto">
+    <Container data-testid="carsWrapper" className="mx-auto">
       <div className={cx(cardsContainer)}>
         {filteredData?.length ? (
           filteredData.map((item: any) => (
@@ -30,7 +30,7 @@ function CarsWrapper({ filteredData }: CardCarProps) {
             />
           ))
         ) : (
-          <div></div>
+          <div data-testid="carsWrapper"></div>
         )}
       </div>
     </Container>

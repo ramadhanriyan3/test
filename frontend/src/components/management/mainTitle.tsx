@@ -21,6 +21,7 @@ export default function CmsTitle() {
       <div className="d-flex justify-content-between align-items-center">
         <div className={cx(tiltleStyle)}>CARS</div>
         <CmsButton
+          type="button"
           label={"New Item"}
           handlerOnClick={() => {
             router.push("/dashboard/create");

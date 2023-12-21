@@ -11,6 +11,7 @@ function Login() {
     document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
   }
   const handlerSubmit = async (e: any) => {
+    "use server";
     try {
       e.preventDefault();
       const formData = {

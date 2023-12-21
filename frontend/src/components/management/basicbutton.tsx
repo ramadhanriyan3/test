@@ -1,6 +1,6 @@
 import { css, cx } from "@emotion/css";
 import { useContext } from "react";
-import { ButtonTypeContext} from "../buttonTypeContext";
+import { ButtonTypeContext } from "../buttonTypeContext";
 
 const noBackground = css`
   padding-left: 12px;
@@ -37,10 +37,15 @@ export default function BasicButton({
   handlerOnClick,
   label,
 }: BasicButtonProps) {
-  const buttonType = useContext(ButtonTypeContext) 
+  const buttonType = useContext(ButtonTypeContext);
   return (
     <>
-      <button type={buttonType} onClick={handlerOnClick} className={cx(noBackground)}>
+      <button
+        data-testid="basicButton"
+        type={buttonType}
+        onClick={handlerOnClick}
+        className={cx(noBackground)}
+      >
         {label}
       </button>
     </>

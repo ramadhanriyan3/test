@@ -3,7 +3,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 function Footer() {
   return (
     <>
-      <Container fluid="lg" className="p-0 mt-100 mb-100">
+      <Container data-testid="footer" fluid="lg" className="p-0 mt-100 mb-100">
         <Row className="mx-3 justify-content-start gap-5">
           <Col sm={3} className="p-0">
             <p className="body-light">

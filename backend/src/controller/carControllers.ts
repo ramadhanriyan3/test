@@ -1,5 +1,4 @@
 import express, { Request, Response } from "express";
-import { CarsModel } from "../models/cars";
 import CarServices from "../services/car";
 import { v4 as uuidv4 } from "uuid";
 import LogServices from "../services/logHistory";

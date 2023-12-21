@@ -35,3 +35,5 @@ app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.listen(PORT, () => {
   console.log(`lintening to port ${PORT}`);
 });
+
+export default app;

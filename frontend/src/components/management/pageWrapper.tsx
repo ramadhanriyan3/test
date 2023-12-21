@@ -9,7 +9,7 @@ interface WraperProp {
 export default function PageWraper({ children, buttonType }: WraperProp) {
   return (
     <>
-      <Container fluid className="p-4">
+      <Container data-testid="pageWrapper" fluid className="p-4">
         <ButtonTypeContext.Provider value={buttonType}>
           {children}
         </ButtonTypeContext.Provider>

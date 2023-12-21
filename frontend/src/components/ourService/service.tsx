@@ -3,7 +3,7 @@ import ServiceItem from "./serviceItem";
 
 function OurService() {
   return (
-    <Container className="mt-100" id="ourService">
+    <Container data-testid="ourService" className="mt-100" id="ourService">
       <Row className="justify-content-center">
         <Col className="col-10 col-sm-5 offset-md-1 px-auto">
           <Image fluid src="/img_service.png" alt="service" />

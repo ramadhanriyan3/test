@@ -3,7 +3,7 @@ import { Container, Accordion, Row, Col } from "react-bootstrap";
 
 function FaqAccordion() {
   return (
-    <Container className="mt-100 p-0" id="faq">
+    <Container data-testid="accordion" className="mt-100 p-0" id="faq">
       <Row className="justify-content-md-start justify-content-center">
         <Col md={4}>
           <h3 className="heading-bold pb-2">Frequently Asked Question</h3>

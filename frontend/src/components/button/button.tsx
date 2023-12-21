@@ -8,6 +8,7 @@ interface ButtonProps {
 function MyButton({ value, handlerOnClick }: ButtonProps) {
   return (
     <button
+      data-testid="userButton"
       className="m-0 body-regular buttonStyle "
       onClick={handlerOnClick}
       type="submit"

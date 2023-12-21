@@ -4,6 +4,7 @@ import Image from "next/image";
 function MainMenu() {
   return (
     <div
+      data-testid="mainMenu"
       style={{ backgroundColor: "blue", width: "70px", height: "902px" }}
       className=" d-flex direction flex-column align-item-center"
     >

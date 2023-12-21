@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import CmsCard from "../cmsCard";
 import axios from "axios";
 import { css, cx } from "@emotion/css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, ReactNode } from "react";
 import BasicButton from "../basicbutton";
 import { ButtonTypeContext } from "@/components/buttonTypeContext";
 import { useContext } from "react";
@@ -16,7 +16,11 @@ const cardsContainer = css`
 `;
 const url = "http://localhost:2700/cars";
 
-function CardContainer() {
+interface CardContainerProp {
+  children: React.ReactNode;
+}
+
+function CardContainer({ children }: CardContainerProp) {
   const [data, setData] = useState<any>([]);
   const buttonType = useContext(ButtonTypeContext);
   const getResult = async () => {
@@ -34,13 +38,8 @@ function CardContainer() {
 
   return (
     <Container fluid className="mt-4 p-0">
-      <div className="d-flex my-4 gap-3">
-        <BasicButton label={"All"} handlerOnClick={() => {}} />
-        <BasicButton label={"Small"} handlerOnClick={() => {}} />
-        <BasicButton label={"Medium"} handlerOnClick={() => {}} />
-        <BasicButton label={"Large"} handlerOnClick={() => {}} />
-      </div>
-      <div className={cx(cardsContainer)}>
+      <div className="d-flex my-4 gap-3">{children}</div>
+      <div data-testid="cardContainer" className={cx(cardsContainer)}>
         {data.map((item: any) => {
           return (
             <CmsCard

@@ -70,7 +70,7 @@ export default function CmsButton({
           onClick={handlerOnClick}
           className={style ? cx(withBackground) : cx(noBackground)}
         >
-          <Image src={imagePath} /> {label}
+          <Image src={imagePath} alt="" /> {label}
         </button>
       </>
     );

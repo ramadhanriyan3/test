@@ -83,7 +83,7 @@ export default function FormPage({ method, apiAction }: FormPageProps) {
     }
   };
   return (
-    <Container fluid className="p-0">
+    <Container data-testid="form" fluid className="p-0">
       <div className={cx(tiltleStyle, "mb-3")}>Add New Cars</div>
       <div
         style={{ background: "white" }}

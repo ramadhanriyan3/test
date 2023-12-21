@@ -9,7 +9,7 @@ interface HeroProps {
 function Hero({ children }: HeroProps) {
   return (
     <>
-      <Container className="main-bg px-0 max-width pt-37">
+      <Container data-testid="hero" className="main-bg px-0 max-width pt-37">
         <Row className="row-gap-4  me-0 mx-md-0">
           <Col
             lg={5}

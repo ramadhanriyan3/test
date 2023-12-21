@@ -21,7 +21,12 @@ export default function Home() {
       <OurService />
       <WhyUs />
       <Testimonial />
-      <BlueBox />
+      <BlueBox>
+        <MyButton
+          value={"Mulai Sewa Mobil"}
+          handlerOnClick={() => router.push("/cars")}
+        />
+      </BlueBox>
       <FaqAccordion />
     </>
   );

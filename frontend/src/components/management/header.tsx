@@ -7,6 +7,7 @@ function Header() {
   return (
     <>
       <div
+        data-testid="header"
         className="d-flex justify-content-between align-items-center"
         style={{
           width: "1370px",
@@ -35,7 +36,7 @@ function Header() {
             }}
           >
             <form action="" className="">
-              <Image src="/fi_search.png" className="mx-1" />
+              <Image src="/fi_search.png" className="mx-1" alt="" />
               <input
                 type="text"
                 placeholder="Search"
@@ -47,11 +48,10 @@ function Header() {
           <div className="d-flex align-items-center mx-3">
             <Image src="" alt="ava" />
             <p className="px-2 m-0">User Name</p>
-            <Image src="/fi_chevron-down.svg" />
+            <Image src="/fi_chevron-down.svg" alt="" />
           </div>
         </div>
       </div>
-      <div></div>
     </>
   );
 }

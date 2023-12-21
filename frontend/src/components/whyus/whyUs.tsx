@@ -4,7 +4,7 @@ import WhyCard from "./whyCard";
 function WhyUs() {
   return (
     <>
-      <Container className="mt-100" id="whyUs">
+      <Container data-testid="whyUs" className="mt-100" id="whyUs">
         <h2 className="heading-bold mb-3">Why Us?</h2>
         <p className="body-light pb-4">Mengapa harus pilih Binar Car Rental</p>
         <Row className="justify-content-xl-between justify-content-evenly m-0 row-gap-3">

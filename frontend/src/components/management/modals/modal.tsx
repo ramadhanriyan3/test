@@ -28,7 +28,7 @@ function DeleteModal(props: any) {
 
   return (
     <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered>
-      <div className={cx(modalContainer, "mx-auto")}>
+      <div data-testid="modal" className={cx(modalContainer, "mx-auto")}>
         <div>
           <Image src="/img-BeepBeep.png" width={153} height={121} alt="" />
         </div>

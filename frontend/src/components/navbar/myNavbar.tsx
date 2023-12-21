@@ -18,10 +18,14 @@ const navItem = css`
     border-color 0.15s ease-in-out;
 `;
 
-function MyNavbar() {
+interface navbarProp {
+  children: React.ReactNode;
+}
+
+function MyNavbar({ children }: navbarProp) {
   return (
     <>
-      <header className="max-width mx-auto">
+      <header data-testid="navbar" className="max-width mx-auto">
         <Navbar expand="lg" className="main-bg">
           <Container className="p-0 mx-auto">
             <Navbar.Brand href="#home">
@@ -65,7 +69,8 @@ function MyNavbar() {
                   >
                     FAQ
                   </Link>
-                  <MyButton value={"register"} handlerOnClick={() => {}} />
+                  {children}
+                  {/* <MyButton value={"register"} handlerOnClick={() => {}} /> */}
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

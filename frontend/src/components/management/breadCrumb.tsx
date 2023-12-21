@@ -40,6 +40,7 @@ export default function BreadCrumb({ lastStep }: StepBarBrops) {
             width={16}
             height={16}
             className="my-2 mx-2"
+            alt=""
           />
           <p className={cx(lastStepStyle, "py-2 my-2")}>Car List</p>
         </div>
@@ -55,6 +56,7 @@ export default function BreadCrumb({ lastStep }: StepBarBrops) {
           width={16}
           height={16}
           className="my-2 mx-2"
+          alt=""
         />
         <p
           className={cx(stepStyle, "py-2 my-2")}
@@ -67,6 +69,7 @@ export default function BreadCrumb({ lastStep }: StepBarBrops) {
           width={16}
           height={16}
           className="my-2 mx-2"
+          alt=""
         />
         <p className={cx(lastStepStyle, "py-2 my-2")}>{lastStep}</p>
       </div>

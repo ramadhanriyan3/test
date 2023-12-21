@@ -34,7 +34,10 @@ function Testimonial() {
   }, []);
 
   return (
-    <div className="container px-sm-0 px-3 mt-100 max-width">
+    <div
+      data-testid="testimonial"
+      className="container px-sm-0 px-3 mt-100 max-width"
+    >
       <h2 className="big-header text-center mb-3">Testimonial</h2>
       <p className="body-light text-center pb-4">
         Berbagai review positif dari para pelanggan kami

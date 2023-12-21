@@ -13,10 +13,14 @@ const blueHead = css`
   height: 326px;
 `;
 
-function BlueBox() {
+interface BlueBoxProp {
+  children: React.ReactNode;
+}
+
+function BlueBox({ children }: BlueBoxProp) {
   const router = useRouter();
   return (
-    <Container className="mt-100">
+    <Container data-testid="blueBox" className="mt-100">
       <div
         className={cx(
           blueHead,
@@ -30,10 +34,11 @@ function BlueBox() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <MyButton
+        {children}
+        {/* <MyButton
           value={"Mulai Sewa Mobil"}
           handlerOnClick={() => router.push("/cars")}
-        />
+        /> */}
       </div>
     </Container>
   );
